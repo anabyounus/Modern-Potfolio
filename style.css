@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+
+}
+body{
+  background-color: #262525;
+}
+
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+}
+
+.left-container,
+.right-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+.left-container {
+    background-color: #262525;
+    width: 80%;
+    padding-left: 3rem;
+}
+
+.right-container {
+    background: linear-gradient(-40deg, #3877FF, #262525 80%);
+    width: 20%;
+}
+
+.icon .fa-brands {
+    color: #bbb;
+    font-size: 1.7rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.contant {
+    margin-left: 4rem;
+    color: #fff;
+}
+
+.contant .Intro {
+    font-size: 1.5rem;
+}
+
+.contant .Intro span {
+    color: #5DB9EE;
+}
+
+.contant h1 {
+    font-size: 4rem;
+    color: #5DB9EE;
+}
+
+.contant .details {
+    font-size: 1.1rem;
+    color: white;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.btn-container button {
+    padding: .5rem 1.5rem;
+    border: .1rem solid #5DB9EE;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .9s ease;
+}
+
+.Ahmed {
+    background: #5DB9EE;
+    color: #262525;
+}
+
+.Ahmedq {
+    background: transparent;
+    color: #5DB9EE;
+    margin-left: 2rem;
+}
+
+.Ahmed:hover {
+    background: transparent;
+    color: #5DB9EE;
+}
+
+.Ahmedq:hover {
+    background: #5DB9EE;
+    color: #262525;
+}
+
+.icon .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(#fff, #5DB9EE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 34rem;
+
+}
+
+.circle:nth-child(2) {
+    background-image: url(anab-younus1.jpg);
+    width: 28rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1rem solid white;
+    box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 2rem #3877FF, inset 0 0 2rem #3877FF, 0 0 4rem #3877FF, inset 0 0 4rem #3877FF;
+}
+
+.navlist li a::after, .navlist .active ::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .7s;
+}
+
+.navlist li a:hover::after, .navlist .active ::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.contant h2{
+    color: #5DB9EE;
+    font-size:40px ;
+}
+
+
+
+/* ====================footer strat=================== */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.footer-section {
+  display: block;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* min-height: 100vh; */
+  margin-top: 200px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  /* min-height: 100px; */
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+/* =====================footer end========================= */
